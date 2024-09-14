@@ -12,7 +12,7 @@ type SummaryResponse = {
 };
 
 export async function getSummary(): Promise<SummaryResponse> {
-  const res = await fetch("http://localhost:3333/summary");
+  const res = await fetch("http://localhost:4000/summary");
   const data = await res.json();
   return data.summary;
 }

@@ -6,7 +6,7 @@ type PendingGoalsResponse = {
 }[];
 
 export async function getPendingGoals(): Promise<PendingGoalsResponse> {
-  const res = await fetch("http://localhost:3333/pending-goals");
+  const res = await fetch("http://localhost:4000/pending-goals");
   const data = await res.json();
   return data.pendingGoals;
 }
